@@ -2,7 +2,7 @@
 
 这是一个 Rax App 的 Midwayjs 服务器
 
-**[English](README.md) || 简体中文**
+**[English](https://github.com/hjwforever/midway-demo#readme) || 简体中文**
 
 ## 接口文档地址
 
