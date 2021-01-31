@@ -23,6 +23,9 @@ export class FileController {
   @Inject()
   fileService;
 
+  @Inject()
+  flagService;
+
   @Post('/doBlob')
   @(CreateApiDoc()
     .summary('Blob to Base64')
@@ -40,11 +43,13 @@ export class FileController {
     .build())
   async blobToBase64(@Body(ALL) body): Promise<FileResult> {
     const stream = await this.ctx.getFileStream();
-    const result = await this.fileService.upload(stream);
-    console.log('upload result', result);
-
-    const { file } = result;
-    return await this.fileService.blobToBase64(file);
+    const uploadResult = await this.fileService.upload(stream);
+    console.log('upload result', uploadResult);
+    this.flagService.setFlag(1);
+    const { file } = uploadResult;
+    const result = await this.fileService.blobToBase64(file);
+    this.flagService.setFlag(2);
+    return result;
     // return await this.fileService.blobToBase64('./test1.gif', 'temp/test1.gif');
   }
 
