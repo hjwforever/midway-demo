@@ -1,12 +1,14 @@
-# my-midway-project
-
 # midway-demo
 
 这是一个 Rax App 的 Midwayjs 服务器
 
-## 快速入门
+**[English](README.md) || 简体中文**
 
-<!-- 在此次添加使用文档 -->
+## 接口文档地址
+
+[API docs](https://rax.aruoxi.com/swagger-ui/index.html#/)
+
+## 快速入门
 
 如需进一步了解，参见 [midway 文档][midway]。
 

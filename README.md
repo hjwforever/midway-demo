@@ -2,6 +2,12 @@
 
 This is a Midwayjs server for Rax App
 
+**English || [简体中文](README.zh-CN.md)**
+
+## API docs
+
+[API docs](https://rax.aruoxi.com/swagger-ui/index.html#/)
+
 ## QuickStart
 
 <!-- add docs here for user -->
